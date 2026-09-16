@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Nerys Anindyta</title>
+    <style>
+        :root {
+            --bg-color: #faf9f6;
+            --card-bg: #ffffff;
+            --text-main: #2d3748;
+            --text-muted: #718096;
+            --accent-color: #9bb7d4;
+            --accent-hover: #7b9ec2;
+            --border-color: #edf2f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--card-bg);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .contact-item {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            background: var(--bg-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.3rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: var(--bg-color);
+            font-size: 0.9rem;
+            color: var(--text-main);
+            outline: none;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--accent-color);
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        #status-msg {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Profil -->
+        <div class="profile-header">
+            <img src="{{ url_for('static', filename='foto.jpg') }}" alt="Nerys Anindyta" class="profile-img">
+            <h1>Nerys Anindyta</h1>
+            <p class="subtitle">Pelajar SMA Negeri 3 Malang | Biology Enthusiast</p>
+        </div>
+
+        <!-- Tentang Saya -->
+        <div class="card">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Aku Nerys Anindyta, seorang pelajar aktif asal Malang kelahiran 14 Januari 2010 yang saat ini menempuh pendidikan di SMA Negeri 3 Malang. Aku memiliki minat besar dalam bidang akademik maupun non-akademik, khususnya dalam kepengurusan organisasi dan kompetisi olimpiade. Terbiasa bekerja dalam tim, mengelola berbagai kegiatan sekolah, dan beradaptasi dalam lingkungan.</p>
+        </div>
+
+        <!-- Prestasi -->
+        <div class="card">
+            <h2>Prestasi & Pengalaman Lomba</h2>
+            <ul>
+                <li><strong>Gold Medal Biology</strong> — Olimpiade Indonesia x UGM</li>
+                <li>Aktif mengikuti berbagai kompetisi olimpiade tingkat daerah hingga nasional.</li>
+            </ul>
+        </div>
+
+        <!-- Organisasi -->
+        <div class="card">
+            <h2>Pengalaman Organisasi & Panitia Event</h2>
+            <ul>
+                <li><strong>Panitia Event & Kegiatan Sekolah</strong> — SMA Negeri 3 Malang & SMP Negeri 3 Malang</li>
+                <li>Berperan aktif dalam perencanaan, persiapan, dan pelaksanaan berbagai acara sekolah.</li>
+                <li>Berkoordinasi dengan tim untuk memastikan kelancaran seluruh rangkaian acara.</li>
+            </ul>
+        </div>
+
+        <!-- Pendidikan -->
+        <div class="card">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li>SMA Negeri 3 Malang</li>
+                <li>SMP Negeri 3 Malang</li>
+                <li>SD Negeri Pandanwangi 2 Malang</li>
+            </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div class="card">
+            <h2>Kontak Saya</h2>
+            <div class="contact-links">
+                <span class="contact-item">📱 +62 856-4605-9957</span>
+                <a href="https://instagram.com/nerryys" target="_blank" class="contact-item">📷 @nerryys</a>
+            </div>
+        </div>
+
+        <!-- Form Kirim Pesan -->
+        <div class="card">
+            <h2>Kirim Pesan</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" required placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="email@contoh.com">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" rows="4" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <p id="status-msg"></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const statusMsg = document.getElementById('status-msg');
+            statusMsg.style.color = '#718096';
+            statusMsg.textContent = 'Mengirim pesan...';
+
+            const data = {
+                nama: document.getElementById('nama').value,
+                email: document.getElementById('email').value,
+                pesan: document.getElementById('pesan').value
+            };
+
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+
+                if (response.ok) {
+                    statusMsg.style.color = '#38a169';
+                    statusMsg.textContent = result.message;
+                    document.getElementById('contactForm').reset();
+                } else {
+                    statusMsg.style.color = '#e53e3e';
+                    statusMsg.textContent = result.message;
+                }
+            } catch (err) {
+                statusMsg.style.color = '#e53e3e';
+                statusMsg.textContent = 'Gagal mengirim pesan. Pastikan server Flask aktif!';
+            }
+        });
+    </script>
+</body>
+</html>
