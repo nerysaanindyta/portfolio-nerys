@@ -1,6 +1,6 @@
 # Portfolio Nerys 
 
-Website portofolio pribadi interaktif yang dirancang untuk menampilkan profil, riwayat pendidikan, prestasi, serta berbagai proyek kreatif dan teknis yang telah saya kerjakan.
+Website portofolio pribadi interaktif yang dirancang untuk menampilkan profil, riwayat pendidikan, prestasi, pengalaman organisasi Tentang Nerys Anindyta 
 
 
 
@@ -18,7 +18,7 @@ Website portofolio pribadi interaktif yang dirancang untuk menampilkan profil, r
 
 ---
 
-## Struktur Direktori Proyek
+## Struktur File Portofolio 
 ```text
 portfolio-nerys/
 │
