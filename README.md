@@ -5,9 +5,9 @@ Website portofolio pribadi interaktif yang dirancang untuk menampilkan profil, r
 
 
 ##  Tentang Nerys
-* **Nama:** Nerys Anindyta[span_0](start_span)[span_0](end_span)
-* **Sekolah:** SMA Negeri 3 Malang[span_1](start_span)[span_1](end_span)
-* **Email:** nerysaanindyta@gmail.com[span_2](start_span)[span_2](end_span)
+* **Nama:** Nerys Anindyta
+* **Sekolah:** SMA Negeri 3 Malang
+* **Email:** nerysaanindyta@gmail.com
 
 
 
