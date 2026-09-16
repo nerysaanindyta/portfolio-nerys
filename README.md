@@ -18,7 +18,7 @@ Website portofolio pribadi interaktif yang dirancang untuk menampilkan profil, r
 
 ---
 
-## Struktur File Portofolio 
+## Struktur File Direktori Portofolio 
 ```text
 portfolio-nerys/
 │
